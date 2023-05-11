@@ -15,6 +15,20 @@
     background-color: red;
     height: 100vh;
     width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container, .picture-container {
+    border: 1px solid black;
+}
+
+.logo-container {
+    height: 5%;
+}
+
+.picture-container {
+    height: 95%;
 }
 
 .right-form {
@@ -53,6 +67,13 @@
 
 .input-container, .submit-btn, .login-btn {
     border: 1px solid black;
-    width: 15vh;
-    height: 2.5vh;
+    width: 33.333%;
+    height: 33.333%;
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    width: 100%;
+    height: 100%;
 }
