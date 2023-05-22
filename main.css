@@ -43,7 +43,7 @@
 
 .form-inputs {
     background-color: #343536;
-    box-shadow: 0px 10px 5px #191919, 0px -10px 5px #191919;
+    box-shadow: 0px 5px 20px #191919, 0px -5px 20px #191919;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -75,6 +75,47 @@
 input, button, a {
     width: 100%;
     height: 100%;
+}
+
+input:focus {
+    outline: 0;
+    border: 1px solid #29ad6b;
+    border-radius: 5px;
+}
+
+input {
+    background: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-top: 0.25em;
+    caret-color: #e9efee;
+    font-size: 1.2em;
+    color: #e9efee;
+    padding: 0.5em;
+    transition: border ease-in-out 0.2s;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    border-radius: 5px;
+    font-size: large;
+    font-weight: 700;
+    color: #e9efee;
+    cursor: pointer;
+}
+
+.submit {
+    border: 2px solid #29ad6b;
+    transition: background-color ease-in-out .2s;
+}
+
+.submit:hover {
+    background-color: #29ad6b;
+}
+
+.sign-in {
+    background-color: #7e7e7e;
 }
 
 span, ::-webkit-scrollbar-button {
